@@ -134,11 +134,12 @@
   .legend .chip{width:16px;height:16px;border-radius:50%;display:inline-block;border:2px solid rgba(0,0,0,.12)}
 
   .ion{transition:transform .6s cubic-bezier(.4,0,.2,1), opacity .4s}
-  footer.foot{text-align:center;color:#a29 fb;color:#a6a2ba;font-size:13px;padding:10px 0 34px}
+  footer.foot{text-align:center;color:#a29fb;color:#a6a2ba;font-size:13px;padding:10px 0 34px}
   .kbd{background:#efeef6;border:1px solid #ddd;border-radius:6px;padding:1px 7px;font-size:12px;font-weight:700;color:#555}
+  .copyright {display:block; margin-top:12px; font-weight:600; font-size:12px; color:#888;}
 </style>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 <header class="top">
   <h1>🧠 흥분의 전도와 전달</h1>
   <p>버튼(또는 그림)을 <b>클릭할 때마다</b> 신경 신호가 만들어지고 전달되는 과정이 한 단계씩 나타납니다.</p>
@@ -154,16 +155,13 @@
 
 <main>
 
-<!-- ===================== SCENE 0 : 뉴런의 종류 ===================== -->
 <section class="scene show" id="scene0">
   <div class="card">
     <div class="scene-head"><span class="badge">STEP 1</span><h2>자극에서 반응까지 — 뉴런의 종류</h2></div>
     <p style="color:var(--ink-soft);margin:6px 0 0">자극이 감각 기관에서 시작해 <b>구심성 → 연합 → 원심성 뉴런</b>을 거쳐 반응 기관까지 전달됩니다.</p>
     <div class="stage-wrap">
       <svg viewBox="0 0 1000 300" id="svg0" aria-label="뉴런의 종류">
-        <!-- 연결선 -->
         <line x1="120" y1="150" x2="880" y2="150" stroke="#e3e0ef" stroke-width="6"/>
-        <!-- 노드들 그룹: 채워짐 -->
         <g id="flow0"></g>
       </svg>
     </div>
@@ -177,7 +175,6 @@
   </div>
 </section>
 
-<!-- ===================== SCENE 1 : 휴지 전위 ===================== -->
 <section class="scene" id="scene1">
   <div class="card">
     <div class="scene-head"><span class="badge">STEP 2</span><h2>휴지 전위 — 왜 세포 안이 (−)일까?</h2></div>
@@ -198,7 +195,6 @@
   </div>
 </section>
 
-<!-- ===================== SCENE 2 : 활동 전위 ===================== -->
 <section class="scene" id="scene2">
   <div class="card">
     <div class="scene-head"><span class="badge">STEP 3</span><h2>활동 전위 — 막전위의 급격한 변화</h2></div>
@@ -220,7 +216,6 @@
   </div>
 </section>
 
-<!-- ===================== SCENE 3 : 흥분의 전도 ===================== -->
 <section class="scene" id="scene3">
   <div class="card">
     <div class="scene-head"><span class="badge">STEP 4</span><h2>흥분의 전도 — 축삭을 따라 이동</h2></div>
@@ -242,7 +237,6 @@
   </div>
 </section>
 
-<!-- ===================== SCENE 4 : 흥분의 전달 ===================== -->
 <section class="scene" id="scene4">
   <div class="card">
     <div class="scene-head"><span class="badge">STEP 5</span><h2>흥분의 전달 — 시냅스를 건너서</h2></div>
@@ -260,7 +254,10 @@
   </div>
 </section>
 
-<footer class="foot">생명과학 · 항상성과 몸의 조절 — 신경계 | 키보드 <span class="kbd">→</span> 다음 단계, <span class="kbd">←</span> 처음부터</footer>
+<footer class="foot">
+  생명과학 · 항상성과 몸의 조절 — 신경계 | 키보드 <span class="kbd">→</span> 다음 단계, <span class="kbd">←</span> 처음부터
+  <span class="copyright">All Rights Reserved (무단 전재 및 재배포 금지)</span>
+</footer>
 </main>
 
 <script>
